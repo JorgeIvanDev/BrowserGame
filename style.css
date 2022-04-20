@@ -16,13 +16,23 @@
     top: 400px;
 }   
 
+.animate{
+    animation: move 500ms infinite;
+}
+
+@keyframes move{
+    0%{right:150px;}
+    70%{right: 100px;}
+    100%{right: 150px;}
+ }
+
 #enemy1{
     background-color: orangered;    
     width: 30px;
     height: 25px;
     position: relative;
     top: -100px;
-    animation: move 1s;
+    animation: move 2.4s infinite linear;
 }
 
 #enemy2{
@@ -32,6 +42,7 @@
     position: relative;
     top: -125px;
     left: 100px;
+    animation: move .8s infinite linear;
 }
 
 
@@ -42,6 +53,7 @@
     position: relative;
     top: -150px;
     left: 200px;
+    animation: move 2s infinite linear;
 }
 
 
@@ -52,7 +64,7 @@
     position: relative;
     top: -175px;
     left: 300px;
-    animation: move 1s;
+    animation: move 1s infinite linear;
 }
 
 
@@ -63,9 +75,10 @@
     position: relative;
     top: -200px;
     left: 400px;
+    animation: move 1s infinite linear;
 }
 
 @keyframes move{
-    0%{top:-50px;}
-    100%{top: 10px;}
+    0%{top: 0px;}
+    100%{top: 340px;}
 }
