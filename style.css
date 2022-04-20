@@ -22,6 +22,7 @@
     height: 25px;
     position: relative;
     top: -100px;
+    animation: move 1s;
 }
 
 #enemy2{
@@ -51,6 +52,7 @@
     position: relative;
     top: -175px;
     left: 300px;
+    animation: move 1s;
 }
 
 
@@ -63,3 +65,7 @@
     left: 400px;
 }
 
+@keyframes move{
+    0%{top:-50px;}
+    100%{top: 10px;}
+}
